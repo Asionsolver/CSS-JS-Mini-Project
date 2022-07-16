@@ -1,0 +1,149 @@
+ /*
+ 
+** Transform properties is ignored on inline elements
+
+
+
+** translate--> moves elements invertical or horizontal direction
+** syntax--> transform: translate()
+** translate function can takes two or one parameter
+** -transform: translate(tx,ty)
+** -transform: translate(tx)
+** tx --> the length of the translation to x axis = lenght or pesentage
+** ty --> the length of the translation to y axis = lenght or pesentage
+** translateX(tx)
+** translateY(ty)
+
+
+** scale --> is used to resize elements in two dimentional space in vertical and horizontal direction
+** syntax--> scale();
+** -transform: scale(sx, sy);
+** -transform: scale(sx);
+** -transform: scaleX(sx);
+** -transform: scaleY(sy);
+** sx--> the amount of resize of the elements in horizontal direction - number(integer, zero or decimal) with dot (.) separator
+** sy--> the amount of resize of the elements in vertical direction - number(integer, zero or decimal) with dot (.) separator
+** sz,sy --> [0,1] -> decreasing the size
+** sx,sy > 1 --> increasing the size
+
+
+
+** rotate --> rotate elements is=n 2d space
+** syntax --> rotate(a);
+** a =  angle
+** positive(+) --> clockwise rotation 
+** negative(-) --> counter-clockwise rotation
+** a = 360 degree = 1 full rotation --> 360deg
+** a = 400 gradians = 1 full rotation --> 400grad
+** a = 2 * pi radians = 6.28 radians = 1 full rotation --> 1red
+** a = a turn = 1 full rotation --> 1turn
+
+
+
+/**
+  ** skew -> tilting elements in 2d space
+  ** transform: skew(); -> syntax
+  ** skew(ax, ay);
+  ** skew(ax);
+  ** skewX(ax);
+  ** skewY(ay);
+  ** ax -> the amount of the angle to use to distort the element in horizontal direction
+  ** ay -> the amount of the angle to use to distort the element in vertical direction
+  ** ax, ay -> degree, gradian, radian and turn
+**/
+ /**
+  ** elements -> block level and inline level
+  ** transformables -> block levels
+  ** non-transformables -> inline levels
+**/
+ /**
+  ** transform-origin -> changing the transform origin
+  ** transform-origin: center center | 50% 50%;
+  ** transform-origin: xAxis yAxis;
+  ** xAxis : left, right, top, bottom, center, percentage, lengths
+  ** yAxis : left, right, top, bottom, center, percentage, lengths
+**/
+ 
+ .wrapper {
+     width: 300px;
+     height: 300px;
+     border: 3px dashed rgb(16, 16, 189);
+     margin: 0 auto;
+ }
+ 
+ .inner {
+     /* translate elemnts directionin both axis */
+     /* transform: translate(100px, 100px); */
+     /* translate elemnts directionin +X axis */
+     /* transform: translate(100px); */
+     /* transform: translateX(100px); */
+     /* translate elemnts direction in -X axis */
+     /* transform: translate(-100px); */
+     /* transform: translateX(-100px); */
+     /* translate elemnts direction in y axis */
+     /* transform: translate(0px, 100px); */
+     /* transform: translateY(100px); */
+     /* translate elemnts direction in -y axis */
+     /* transform: translate(0px, -100px); */
+     /* transform: translateY(-100px); */
+     width: 300px;
+     /* scaling alone bith axis */
+     /* transform: scale(2, 2); */
+     /* these both transformation are doing the same things */
+     /* transform: scale(1.5); */
+     /* Scaling alone x axis */
+     /* transform: scaleX(1.5); */
+     /* Scaling alone y axis */
+     /* transform: scaley(1.5); */
+     height: 300px;
+     /* Degrees */
+     /* transform: rotate(50deg); */
+     /* transform: rotate(-50deg); */
+     /* Gradians */
+     transform: rotate(50grad);
+     /* transform: rotate(-50grad); */
+     /* Radians */
+     /* (360deg / 6.28) * 1 rad --> 1 rad = 57deg */
+     /* transform: rotate(1rad); */
+     /* transform: rotate(-1rad); */
+     /* Turn */
+     /* transform: rotate(0.3turn); */
+     /* transform: rotate(-0.3turn); */
+     border: 3px solid rgb(204, 20, 20);
+     /* Skew in X Axis */
+     /* transform: skewX(10deg); */
+     /* transform: skew(-20deg); */
+     /* Skew in Y Axis */
+     /* transform: skewY(-10deg); */
+     /* Skew in Both Axes */
+     /* transform: skew(10deg, 20deg); */
+     margin: 0 auto;
+     /*(default)*/
+     /* transform-origin: 50% 50%; */
+     /*(default)*/
+     /* transform-origin: center center; */
+     /* transform-origin: center bottom; */
+     /* transform-origin: 50% 0%; */
+     /* transform-origin: 0% 100%;
+     transform-origin: bottom left;
+     transform-origin: left bottom; */
+     /* transform-origin: 100% 100%;
+     transform-origin: right bottom;
+     transform-origin: bottom right; */
+     /* transform-origin: 0% 0%;
+     transform-origin: top left;
+     transform-origin: left top; */
+     /* transform-origin: 100% 0%;
+     transform-origin: right top;
+     transform-origin: top right; */
+     /* Multiple transform properties how to apply */
+     /* This order is right to left */
+     transform: rotate(20deg) translate(20px, 20px) scale(1.4);
+ }
+ 
+ .inline {
+     /* display: block; */
+     /* display: inline; */
+     display: inline-block;
+     transform: rotate(20deg);
+ }

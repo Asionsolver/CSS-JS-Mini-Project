@@ -1,0 +1,79 @@
+/* Transiton: Transition as a CSS properties applied to specific element to male other properties of this specific element change smoothly over a given duration or animated a nice way whwn hovering over. */
+
+
+/* transition-timing-function: how to change in property will occur
+ transition-timing-function: ease--> the change start slow then go faster then finis slow;
+ transition-timing-function: linear--> change the occurs at the same rate;
+ transition-timing-function: ease-in--> the change start slow then go faster before the end;
+
+ transition-timing-function: ease-out--> the change start fast then slow down before the end;
+ transition-timing-function: ease-in-out--> the change start slow then go faster then finishen slow
+
+ Transition-Delay-->The time before the transition starts
+ */
+
+button {
+    height: 90px;
+    width: 290px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+    /* transition: background-color color width; */
+    /* transition-delay: 2s; */
+    /* transition: all; */
+    /* transition-duration: 2s; */
+    /* transition: background-color 3s ease-in-out 2s, color 3s ease 2s, border-radius 3s ease-in 2s, width 3s ease 2s; */
+    transition: all 3s ease-out 2s;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: black;
+    color: red;
+    width: 500px;
+    border-radius: 30px;
+}
+
+.container {
+    width: 960px;
+}
+
+.move {
+    margin: 2em;
+    width: 150px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: red;
+    color: blanchedalmond;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 0.5em;
+    font-size: 20px;
+    transition-property: translate();
+    transition-duration: 3s;
+}
+
+#ease {
+    transition-timing-function: ease;
+}
+
+#ease-linear {
+    transition-timing-function: linear;
+}
+
+#ease-in {
+    transition-timing-function: ease-in;
+}
+
+#ease-out {
+    transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.move:hover {
+    transform: translate(900px, 0)
+}
