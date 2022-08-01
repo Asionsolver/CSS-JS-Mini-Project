@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1d2b3a;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 100vh;
+}
+
+.inputBox{
+    position: relative;
+    width: 250px;
+}
+
+.inputBox input{
+    width:100%;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 5px;
+    background: #1d2b3a;
+    outline: none;
+    color: #fff;
+    transition: .5s;
+}
+
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    transition: .5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: #00dfc4 1px solid;
+    border-right: #00dfc4 1px solid;
+    letter-spacing: 0.2em;
+}
+.inputBox:nth-child(1) input:valid ~ span,
+.inputBox:nth-child(1) input:focus ~ span{
+background: #00dfc4;
+border-radius: 2px;
+color: #1d2b3a;
+padding: 2px;
+}
+.inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span{
+background: #00dfc4;
+border-radius: 2px;
+color: #1d2b3a;
+padding: 2px;
+}
+.inputBox input:valid,
+.inputBox input:focus{
+    border: 1px solid #00dfc4;
+}
+
+button{
+    padding: 10px 20px;
+    border: 2px solid rgba(255,255,255,0.25);
+    background: transparent;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+button:hover{
+    background: #00dfc4;
+    color: #1d2b3a;
+    transition: .5s;
+}
