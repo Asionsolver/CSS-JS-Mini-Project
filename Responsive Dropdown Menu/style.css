@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #476678;
+  min-height: 100vh;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  min-height: 66px;
+  background: #43a5f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 1.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 80px;
+}
+
+header ul {
+  position: relative;
+}
+header ul li {
+  list-style: none;
+  position: relative;
+  float: left;
+}
+
+header ul li a {
+  display: flex;
+  padding: 25px 25px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 1.1em;
+  justify-content: space-between;
+}
+
+header ul li a:hover {
+  background: #2b93e3;
+}
+
+header ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #445964;
+  display: none;
+}
+
+header ul li:hover > ul {
+  display: block;
+}
+
+header ul li ul li {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header ul li ul li ul {
+  top: 0;
+  left: 200px;
+}
+
+/* Now make it responsive */
+
+@media (max-width: 900px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  header nav {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background: #445964;
+  }
+
+  header nav ul li {
+    width: 100%;
+  }
+}
