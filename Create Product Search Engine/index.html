@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Product Search Engine</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <form>
+        <i class="fas fa-search"></i>
+        <input
+          type="text"
+          name=""
+          placeholder="Search products"
+          id="search-item"
+          onkeyup="search()"
+        />
+      </form>
+
+      <div class="product-list" id="product-list">
+        <div class="product">
+          <img src="img/T-Shirt1.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Big Backpack3.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Hoddies3.png" alt="" />
+          <div class="product-details">
+            <h2>Hoddies For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Hoddies2.png" alt="" />
+          <div class="product-details">
+            <h2>Hoddies For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="img/T-Shirt1.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/small-bagpac.png" alt="" />
+          <div class="product-details">
+            <h2>Bag For Roadtrip</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/T-Shirt5.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Hoddies4.png" alt="" />
+          <div class="product-details">
+            <h2>Hoddies For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Men Sneaker1.png" alt="" />
+          <div class="product-details">
+            <h2>Grand Court Sneaker</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Hoddies5.png" alt="" />
+          <div class="product-details">
+            <h2>Hoddies For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Men Sneaker2.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/T-Shirt3.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Men Sneaker5.png" alt="" />
+          <div class="product-details">
+            <h2>Grand Court Sneaker</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Men Sneaker11.png" alt="" />
+          <div class="product-details">
+            <h2>Grand Court Sneaker</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Big Backpack2.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Women bag1.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Women bag2.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Women bag3.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/shirt-4.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/shirt-1.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Men Watch4.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Men Watch2.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/shirt-2.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/shirt-3.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Men Watch1.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Women bag4.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Men Watch5.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Big Backpack1.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+        <div class="product">
+          <img src="img/Men Watch4.png" alt="" />
+          <div class="product-details">
+            <h2>TShirt For Everyone</h2>
+            <h3>$25</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/3557fae645.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
